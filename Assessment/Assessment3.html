@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        $('#show').click(function(){
+        username=$('#username').val();
+        city=$('#city').val();
+        email=$('#mail').val();
+        number=$('#num').val();
+        // function fun(){
+        $('#mydiv').html('welcome '+ username+  'from' + city + 'phone number is' +number + 'mail id is' + email);
+        });
+    });
+</script>
+</head>
+<body>
+    User Name<input type="text" id="username"></br>
+    Enter City<input type="text" id="city"></br>
+    Enter mailid<input type="email" id="mail"><br>
+    Phone Number<input type="number" id="num"><br>
+    <button id="show" onclick="fun()">show</button>
+    <div id="mydiv"></div>
+</body>
+</html>
